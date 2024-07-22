@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jenkins-resource-limits
+  namespace: jenkins
+data:
+  jenkins-agent.yaml: |
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: jenkins-agent
+      namespace: jenkins
+    spec:
+      containers:
+      - name: jenkins-agent
+        image: jenkins/jnlp-slave:alpine
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1024Mi"
+            cpu: "1000m"
