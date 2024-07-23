@@ -1,4 +1,4 @@
-# "Maximizing Jenkins: Techniques for Enhanced Scalability and Resilience"
+# Maximizing Jenkins: Techniques for Enhanced Scalability and Resilience
 
 **Optimizing Jenkins for Scalability and Resilience** repository --> This project would provide the insights, strategies and code snippets to enhance the performance, scalability and resilience of Jenkins CI/CD pipelines.
 
